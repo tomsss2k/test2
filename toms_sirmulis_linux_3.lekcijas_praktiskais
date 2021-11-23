@@ -1,0 +1,25 @@
+mkdir toms_sirmulis
+sudo mkdir toms_sirmulis
+cd ..
+cd etc
+cd ssh
+cp ssh_config /home/toms_sirmulis/
+sudo cp ssh_config /home/toms_sirmulis/
+cd ..
+cd home
+cd toms_sirmulis/
+sudo mv ssh_config ssh_config_backup
+sudo vi ssh_config_backup 
+sudo wget http://ftp.midnight-commander.org/mc-4.6.2-pre1.tar.gz -P /home/toms_sirmulis/
+sudo tar -xvzf mc-4.6.2-pre1.tar.gz 
+cd mc-4.6.2-pre1/
+cd ..
+sudo bzip2 ssh_config_backup 
+sudo wget https://sourceforge.net/projects/g4l/files/latest/download -P /home/toms_sirmulis/
+cd dowload
+sudo mv download Ghost4Linux
+sudo mkdir /mnt/iso
+unzip Ghost4Linux
+sudo unzip Ghost4Linux
+sudo mount /home/toms_sirmulis/g4l-v0.60.iso /mnt/iso -o loop
+ls /mnt/iso
