@@ -1,0 +1,9 @@
+#!bash/bin
+
+gateway=$(route -n | grep 'UG[ \t]' | awk '{print $2}')
+
+if [ "$gateway" == '' ]; then
+	echo "Nesasniedzams"
+else
+	echo "Sasniedzams $gateway"
+fi
