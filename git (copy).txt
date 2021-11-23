@@ -1,0 +1,26 @@
+git init
+
+git config --global user.email "###"
+git config --global user.name "###"
+
+remote add origin 'git ssh link'
+ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub
+
+
+git add 'file name'/-a
+git commit -m "###"
+git push --set-upstream origin master / git push
+
+git clone 'reponame'
+
+git flow init
+git branch
+git push --set-upstream origin develop
+git checkout '##' //switch branches
+git flow feature finish '###'
+git flow feature start '###'
+
+
+git diff
+git status
